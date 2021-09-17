@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*=========================
+    header css
+    =======================*/
+
+header {
+    /* border: 2px solid red; */
+    height: 60px;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: black;
+}
+
+.User-details,
+.menu-btn {
+    font-size: 20px;
+}
+
+
+/*======================
+  header hover section
+  ======================*/
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.marginLeft {
+    margin-left: 0px;
+    padding-right: 20px;
+}
+
+.CircleShadow {
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.CircleShadow:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+
+/*==========================
+  content css
+  =========================*/
+
+.content-section {
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content {
+    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.logoImg {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.searchBar {
+    border: 2px solid lightgray;
+    width: 600px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.searchBar:hover {
+    box-shadow: 0px 0px 4px 0px #b5b5b5;
+}
+
+.searchBar i {
+    color: gray;
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.searchBar input {
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.serachBtns {
+    margin-top: 20px;
+}
+
+.serachBtns button {
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: #f2f3f4;
+}
+
+#HowSeachEngineWorks {
+    font-size: 14px;
+}
+
+.serachBtns button:hover {
+    border: 1px solid lightgray;
+}
+
+.googleSearchBtn {
+    width: 120px;
+}
+
+.LuckyBtn {
+    width: 140px;
+}
+
+.language {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.language p a {
+    color: blue;
+}
+
+.language p a:hover {
+    text-decoration: underline;
+}
+
+
+/*======================
+ Footer section css
+ =======================*/
+
+footer {
+    background-color: #f2f2f2;
+    height: 100px;
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.uperFooter {
+    height: 50%;
+    border: 2px solid lightgray;
+}
+
+.uperFooter p {
+    color: gray;
+    font-size: 14px;
+}
+
+.lowwerFooter {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowwerFooter ul li a {
+    font-size: 14px;
+    color: gray;
+}
+
+.lowwerFooter ul li a:hover {
+    text-decoration: underline;
+}
+
+.leftLowwerFooter {
+    display: flex;
+}
+
+.leftLowwerFooter li {
+    margin-right: 15px;
+}
+
+.rightLowwerFooter {
+    display: flex;
+}
+
+.rightLowwerFooter li {
+    margin-left: 15px;
+}
+
+
+/*=================================
+   MOBLIE AND TAB CSS
+   ==============================*/
+
+@media only screen and (max-width:650px) {
+    .searchBar {
+        width: 90%;
+    }
+    footer {
+        height: 150px;
+    }
+    .uperFooter {
+        height: 50px;
+    }
+    .lowwerFooter {
+        height: 100px;
+        flex-direction: column;
+    }
+    #HowSeachEngineWorks {
+        font-size: 12px;
+    }
+}

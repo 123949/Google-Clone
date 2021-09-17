@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale =1.0">
+    <title>Serach engine</title>
+    <link rel="icon" href="img/sign.png">
+    <script src="https://kit.fontawesome.com/6d06b629b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <!--======================
+     header section
+    =========================-->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a class="link" href="https://www.google.com/gmail/about/">Gmail</a></li>
+                <li><a class="link" href="https://www.google.com/imghp?hl=en">Images</a></li>
+                <div class="CircleShadow">
+                    <li><a class="menu-btn  marginLeft" href="#"><i class="fas fa-bars"></i></a></li>
+                </div>
+                <div class="CircleShadow">
+                    <li><span class="User-details marginLeft"> U</span></li>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+    <!--=========================
+     content section
+    ============================-->
+    <section class="content-section">
+        <div class="container-content">
+            <img class="logoImg" src="img/google.png" alt="Google Serach Engine">
+            <div class="searchBar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInputForJS" class="searchInput">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="serachBtns">
+                <button id="GoogleSearchBtn1" class="googleSearchBtn">Google Search</button>
+                <button id="LuckyBtn2" class="LuckyBtn">I'm Feeling Lucky</button>
+            </div>
+            <div class="language">
+                <p>Google offered in: <a href="#"> हिन्दी मराठी  ગુજરાતી </a> </p>
+            </div>
+        </div>
+    </section>
+    <!--=======================
+     Footer section
+    =========================-->
+    <footer class="footerSection">
+        <div class=" footerContent uperFooter">
+            <p>India</p>
+        </div>
+        <div class="footerContent lowwerFooter">
+            <ul class="leftLowwerFooter">
+                <li>
+                    <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1"> About</a>
+                </li>
+                <li>
+                    <a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertsing </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/intl/en_in/business/">Business</a>
+                </li>
+                <li>
+                    <a id="HowSeachEngineWorks" href="https://www.google.com/search/howsearchworks/?fg=1">How Serach works </a>
+                </li>
+            </ul>
+            <ul class="rightLowwerFooter">
+                <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
